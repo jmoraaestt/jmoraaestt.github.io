@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Júlia de Moraes Toledo — Engenheira de Software & Desenvolvedora Fullstack. Soluções tecnológicas escaláveis, arquitetura de dados e consultoria técnica para empresas B2B e B2C." />
+  <meta name="keywords" content="engenheira de software, fullstack developer, PHP, Laravel, Java, SQL, arquitetura de sistemas, consultoria técnica" />
+  <meta property="og:title" content="Júlia Toledo | Engenheira de Software & Fullstack Developer" />
+  <meta property="og:description" content="Desenvolvimento de sistemas escaláveis end-to-end — do requisito ao deploy." />
+  <meta property="og:type" content="website" />
+  <title>Júlia Toledo | Engenheira de Software & Fullstack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">
+        <span class="navbar__logo-mark">&lt;</span>JT<span class="navbar__logo-mark">/&gt;</span>
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#solutions" class="nav-link">Soluções</a></li>
+        <li><a href="#cases" class="nav-link">Projetos</a></li>
+        <li><a href="#skills" class="nav-link">Stack</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--sm btn--primary navbar__cta">Agendar Consultoria</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
+    <section id="hero" class="hero">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
+
+      <div class="container hero__wrapper">
+        <div class="hero__content" data-animate="fade-up">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Disponível para novos projetos
+          </div>
+          <span class="hero__eyebrow">Olá, sou a</span>
+          <h1 class="hero__name">Júlia Toledo</h1>
+          <p class="hero__role">Engenharia de <span class="gradient-text">Software.</span></p>
+          <p class="hero__description">
+            Desenvolvo soluções tecnológicas escaláveis do zero ao deploy —
+            levantamento de requisitos, arquitetura de dados, desenvolvimento fullstack
+            e consultoria técnica para empresas que precisam de sistemas robustos e confiáveis.
+          </p>
+          <div class="hero__ctas">
+            <a href="#contact" class="btn btn--primary btn--lg">
+              Agendar Consultoria Técnica
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#cases" class="btn btn--ghost btn--lg">Ver Projetos</a>
+          </div>
+          <div class="hero__pills">
+            <span class="hero__pill">PHP</span>
+            <span class="hero__pill-dot">·</span>
+            <span class="hero__pill">Laravel</span>
+            <span class="hero__pill-dot">·</span>
+            <span class="hero__pill">React</span>
+            <span class="hero__pill-dot">·</span>
+            <span class="hero__pill">TypeScript</span>
+            <span class="hero__pill-dot">·</span>
+            <span class="hero__pill">SQL</span>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-animate="fade-left">
+          <div class="hero__photo-frame">
+            <div class="hero__photo-glow"></div>
+            <img src="img/foto.jpeg" alt="Júlia de Moraes Toledo" class="hero__photo" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════ SOLUTIONS ═══════════════════════ -->
+    <section id="solutions" class="solutions section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Soluções</span>
+          <h2 class="section-title">O que entrego para o seu negócio</h2>
+        </div>
+
+        <div class="solutions__grid">
+
+          <div class="service-card" data-animate="fade-up" data-delay="0">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="2" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="16" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M21 16v10M16 21h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Engenharia Fullstack</h3>
+              <p class="service-card__description">
+                Sistemas web robustos com integração fluida entre front-end e back-end.
+                Arquitetura pensada para escalar sem travar a operação do seu negócio.
+              </p>
+              <ul class="service-card__features">
+                <li>APIs RESTful e sistemas web completos</li>
+                <li>Integração de módulos e serviços externos</li>
+                <li>Performance e segurança em produção</li>
+              </ul>
+            </div>
+            <div class="service-card__accent"></div>
+          </div>
+
+          <div class="service-card" data-animate="fade-up" data-delay="100">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="8" y="2" width="12" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="14" cy="21" r="1.5" fill="currentColor"/><path d="M11 5h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Soluções Mobile</h3>
+              <p class="service-card__description">
+                Aplicativos móveis responsivos, otimizados e alinhados às regras de negócio.
+                Entrego apps que funcionam de verdade no dia a dia dos seus usuários.
+              </p>
+              <ul class="service-card__features">
+                <li>Desenvolvimento e manutenção de apps</li>
+                <li>Design responsivo e UX intuitiva</li>
+                <li>Integração com sistemas back-end existentes</li>
+              </ul>
+            </div>
+            <div class="service-card__accent"></div>
+          </div>
+
+          <div class="service-card" data-animate="fade-up" data-delay="200">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><ellipse cx="14" cy="7" rx="10" ry="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 7v7c0 2.21 4.477 4 10 4s10-1.79 10-4V7" stroke="currentColor" stroke-width="1.5"/><path d="M4 14v7c0 2.21 4.477 4 10 4s10-1.79 10-4v-7" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Arquitetura de Dados</h3>
+              <p class="service-card__description">
+                Modelagem de banco de dados, schemas otimizados e queries de alta performance.
+                Transformo dados complexos em estruturas que respondem rápido e não travam.
+              </p>
+              <ul class="service-card__features">
+                <li>Modelagem relacional e design de schemas</li>
+                <li>CTEs, Views e otimização de queries</li>
+                <li>Gestão de concorrência e performance</li>
+              </ul>
+            </div>
+            <div class="service-card__accent"></div>
+          </div>
+
+          <div class="service-card" data-animate="fade-up" data-delay="300">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3L3 9v10l11 6 11-6V9L14 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 9l11 6 11-6" stroke="currentColor" stroke-width="1.5"/><path d="M14 15v10" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Consultoria em Requisitos</h3>
+              <p class="service-card__description">
+                Análise de necessidades do negócio traduzida em arquitetura de sistemas
+                precisa. Elimino a lacuna entre o que o negócio precisa e o que o time técnico entrega.
+              </p>
+              <ul class="service-card__features">
+                <li>Mapeamento de regras de negócio complexas</li>
+                <li>Definição de arquitetura e fluxos de trabalho</li>
+                <li>Documentação técnica e especificações funcionais</li>
+              </ul>
+            </div>
+            <div class="service-card__accent"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CASES ═══════════════════════ -->
+    <section id="cases" class="cases section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Projetos</span>
+          <h2 class="section-title">Projetos & Sistemas</h2>
+          <p class="section-subtitle">
+            Da consultoria corporativa em plataformas de missão crítica a projetos pessoais open source.
+          </p>
+        </div>
+
+        <div class="case-featured" data-animate="fade-up">
+          <div class="case-featured__header">
+            <div class="case-featured__org">
+              <div class="case-featured__org-badge">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L2 6v8l8 4 8-4V6L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <span class="case-featured__company">Ocyan</span>
+                <span class="case-featured__system">Plataforma ERP · Ocys</span>
+              </div>
+            </div>
+            <span class="case-featured__badge">Case Corporativo</span>
+          </div>
+
+          <div class="case-featured__body">
+            <div class="case-featured__info">
+              <h3 class="case-featured__title">
+                ERP Operacional de Missão Crítica
+              </h3>
+              <p class="case-featured__description">
+                Desenvolvimento e sustentação de módulos operacionais críticos da plataforma
+                ERP <strong>Ocys</strong>, utilizada no gerenciamento logístico e operacional
+                da Ocyan — empresa de serviços para o setor de óleo e gás offshore.
+              </p>
+              <p class="case-featured__description">
+                Atuação direta nos módulos de <strong>Gestão de Estoque</strong>,
+                <strong>Suprimentos</strong> e <strong>Medições</strong>, lidando com
+                fluxos logísticos complexos, regras de negócio de grande escala e
+                requisitos rigorosos de integridade de dados.
+              </p>
+
+              <div class="case-featured__modules">
+                <h4 class="case-featured__modules-title">Módulos desenvolvidos</h4>
+                <div class="modules-grid">
+                  <div class="module-chip">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L1 4v6l6 3 6-3V4L7 1z" stroke="currentColor" stroke-width="1.2"/></svg>
+                    Gestão de Estoque
+                  </div>
+                  <div class="module-chip">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 3h10M2 7h10M2 11h6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Suprimentos
+                  </div>
+                  <div class="module-chip">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 10L4 4l3 4 2-3 4 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Medições
+                  </div>
+                  <div class="module-chip">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="3" width="12" height="9" rx="1" stroke="currentColor" stroke-width="1.2"/><path d="M5 3V1M9 3V1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    Fluxos Logísticos
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-featured__metrics">
+              <h4 class="case-featured__metrics-title">Impacto técnico</h4>
+              <div class="metrics-list">
+                <div class="metric-item">
+                  <div class="metric-item__icon metric-item__icon--green">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <span>Módulos operacionais críticos em produção contínua</span>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-item__icon metric-item__icon--blue">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <span>Regras de negócio de grande escala mapeadas e implementadas</span>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-item__icon metric-item__icon--purple">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <span>Fluxos logísticos complexos integrados ao ERP</span>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-item__icon metric-item__icon--orange">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <span>Alta integridade de dados em ambiente offshore corporativo</span>
+                </div>
+              </div>
+
+              <div class="case-featured__stack">
+                <h4 class="case-featured__metrics-title">Stack aplicado</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">Laravel</span>
+                  <span class="tech-tag">SQL Avançado</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <span class="tech-tag">Git</span>
+                  <span class="tech-tag">Linux</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Projects -->
+        <div class="projects-opensource" data-animate="fade-up">
+          <p class="projects-opensource__label">Projetos Pessoais &amp; Open Source</p>
+          <div class="project-cards-grid">
+
+            <!-- FocusTime -->
+            <div class="project-card">
+              <div class="project-card__image">
+                <img src="img/focustime.png" alt="FocusTime — Interface do aplicativo" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__title-row">
+                  <h3 class="project-card__title">FocusTime</h3>
+                  <a href="https://github.com/jmoraaestt/FocusTime" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Ver FocusTime no GitHub">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.67 7.67 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0010 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                    GitHub
+                  </a>
+                </div>
+                <p class="project-card__description">
+                  Aplicação de produtividade fullstack com Pomodoro timer configurável, Kanban board com drag &amp; drop e sugestões de subtarefas via IA adaptativa ao estado mental do usuário.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">React 19</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Vite</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- JuWeek -->
+            <div class="project-card">
+              <div class="project-card__image project-card__image--mobile">
+                <img src="img/juweek01.png" alt="JuWeek — Tela principal" loading="lazy" />
+                <img src="img/juweek03.png" alt="JuWeek — Estudos" loading="lazy" />
+                <img src="img/juweek04.png" alt="JuWeek — Semanal" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__title-row">
+                  <h3 class="project-card__title">JuWeek</h3>
+                  <a href="https://github.com/jmoraaestt/JuWeek" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Ver JuWeek no GitHub">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.67 7.67 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0010 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                    GitHub
+                  </a>
+                </div>
+                <p class="project-card__description">
+                  App mobile e web de organização pessoal e acadêmica. Gestão de compromissos com recorrência, grade de estudos, notas e planejamento semanal — 100% offline, sem necessidade de conta.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Ionic React</span>
+                  <span class="tech-tag">Capacitor</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Stack</span>
+          <h2 class="section-title">Matriz de Competências</h2>
+          <p class="section-subtitle">
+            Domínio técnico construído ao longo de anos em projetos reais de produção.
+          </p>
+        </div>
+
+        <div class="skills__matrix" data-animate="fade-up">
+
+          <div class="skill-cat">
+            <div class="skill-cat__label">
+              <svg width="15" height="15" viewBox="0 0 18 18" fill="none"><path d="M9 1L1 5v8l8 4 8-4V5L9 1z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              Back-end
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--expert">PHP</span>
+              <span class="skill-chip skill-chip--expert">Laravel</span>
+              <span class="skill-chip skill-chip--expert">SQL</span>
+              <span class="skill-chip skill-chip--advanced">Java</span>
+              <span class="skill-chip skill-chip--advanced">Node.js</span>
+              <span class="skill-chip skill-chip--advanced">Express</span>
+            </div>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat__label">
+              <svg width="15" height="15" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M5 17h8M9 13v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Front-end
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--expert">HTML / CSS</span>
+              <span class="skill-chip skill-chip--expert">Bootstrap</span>
+              <span class="skill-chip skill-chip--advanced">JavaScript</span>
+              <span class="skill-chip skill-chip--advanced">React</span>
+              <span class="skill-chip skill-chip--advanced">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat__label">
+              <svg width="15" height="15" viewBox="0 0 18 18" fill="none"><rect x="5" y="1" width="8" height="16" rx="2" stroke="currentColor" stroke-width="1.4"/><circle cx="9" cy="14" r="1" fill="currentColor"/><path d="M7 4h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Mobile
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--advanced">TypeScript</span>
+              <span class="skill-chip skill-chip--advanced">Ionic React</span>
+              <span class="skill-chip skill-chip--mid">Capacitor</span>
+            </div>
+          </div>
+
+          <div class="skill-cat">
+            <div class="skill-cat__label">
+              <svg width="15" height="15" viewBox="0 0 18 18" fill="none"><ellipse cx="9" cy="5" rx="7" ry="3" stroke="currentColor" stroke-width="1.4"/><path d="M2 5v8c0 1.657 3.134 3 7 3s7-1.343 7-3V5" stroke="currentColor" stroke-width="1.4"/><path d="M2 9c0 1.657 3.134 3 7 3s7-1.343 7-3" stroke="currentColor" stroke-width="1.4"/></svg>
+              Dados & Infra
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip skill-chip--expert">PostgreSQL</span>
+              <span class="skill-chip skill-chip--advanced">Git</span>
+              <span class="skill-chip skill-chip--advanced">Linux</span>
+              <span class="skill-chip skill-chip--advanced">REST APIs</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills__legend" data-animate="fade-up">
+          <span class="skills__legend-item">
+            <span class="skills__legend-dot skills__legend-dot--expert"></span>Expert
+          </span>
+          <span class="skills__legend-item">
+            <span class="skills__legend-dot skills__legend-dot--advanced"></span>Avançado
+          </span>
+          <span class="skills__legend-item">
+            <span class="skills__legend-dot skills__legend-dot--mid"></span>Intermediário
+          </span>
+        </div>
+
+        <div class="skills__tags-section" data-animate="fade-up">
+          <p class="skills__tags-label">Conceitos & Práticas</p>
+          <div class="skills__tags">
+            <span class="skill-tag">CTEs & Window Functions</span>
+            <span class="skill-tag">Otimização de Queries</span>
+            <span class="skill-tag">Controle de Concorrência</span>
+            <span class="skill-tag">Clean Code</span>
+            <span class="skill-tag">Arquitetura MVC</span>
+            <span class="skill-tag">APIs RESTful</span>
+            <span class="skill-tag">Modelagem Relacional</span>
+            <span class="skill-tag">Mobile First</span>
+            <span class="skill-tag">Ciclo de Vida do Software</span>
+            <span class="skill-tag">Offline-First</span>
+            <span class="skill-tag">Kanban & Scrum</span>
+            <span class="skill-tag">Integração de APIs</span>
+            <span class="skill-tag">Levantamento de Requisitos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title">Vamos construir algo juntos</h2>
+          <p class="section-subtitle">
+            Descreva o seu projeto ou desafio técnico. Responderei em até 24 horas
+            com uma análise preliminar e os próximos passos.
+          </p>
+        </div>
+
+        <div class="contact__wrapper">
+          <div class="contact__info" data-animate="fade-right">
+            <div class="contact-link-card">
+              <a href="mailto:jmoraaest@gmail.com" class="contact-link" aria-label="Enviar email">
+                <div class="contact-link__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
+                <div class="contact-link__text">
+                  <span class="contact-link__label">Email</span>
+                  <span class="contact-link__value">jmoraaest@gmail.com</span>
+                </div>
+                <svg class="contact-link__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+
+            <div class="contact-link-card">
+              <a href="https://www.linkedin.com/in/julia-toledoo/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <div class="contact-link__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 8.5v5M6 5.5v.5M10 13.5v-3a1.5 1.5 0 013 0v3M10 8.5v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <div class="contact-link__text">
+                  <span class="contact-link__label">LinkedIn</span>
+                  <span class="contact-link__value">Perfil Profissional</span>
+                </div>
+                <svg class="contact-link__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+
+            <div class="contact-link-card">
+              <a href="https://github.com/jmoraaestt" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <div class="contact-link__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.67 7.67 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0010 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="contact-link__text">
+                  <span class="contact-link__label">GitHub</span>
+                  <span class="contact-link__value">github.com/jmoraaestt</span>
+                </div>
+                <svg class="contact-link__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+
+            
+          </div>
+
+          <form
+            id="contactForm"
+            class="contact__form"
+            action="https://formsubmit.co/ajax/jmoraaest@gmail.com"
+            method="POST"
+            data-animate="fade-left"
+          >
+            <input type="hidden" name="_subject" value="Novo contato via portfólio — Júlia Toledo" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display:none" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome completo" required />
+              </div>
+              <div class="form-group">
+                <label for="company" class="form-label">Empresa <span class="form-label--opt">(opcional)</span></label>
+                <input type="text" id="company" name="company" class="form-input" placeholder="Nome da empresa" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="service" class="form-label">Tipo de projeto</label>
+              <select id="service" name="service" class="form-input form-select" required>
+                <option value="" disabled selected>Selecione o serviço</option>
+                <option value="fullstack">Engenharia Fullstack</option>
+                <option value="mobile">Solução Mobile</option>
+                <option value="data">Arquitetura de Dados</option>
+                <option value="consultoria">Consultoria em Requisitos</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Descreva seu projeto ou desafio</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Conte sobre o sistema que precisa ser desenvolvido, problema que quer resolver, prazo estimado..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar mensagem
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-disclaimer">
+              Sem spam. Suas informações são usadas somente para responder ao seu contato.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <a href="#hero" class="navbar__logo">
+          <span class="navbar__logo-mark">&lt;</span>JT<span class="navbar__logo-mark">/&gt;</span>
+        </a>
+        <p class="footer__tagline">Engenharia de Software.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#solutions">Soluções</a>
+        <a href="#cases">Projetos</a>
+        <a href="#skills">Stack</a>
+        <a href="#contact">Contato</a>
+      </div>
+      <p class="footer__copy">© 2025 Júlia de Moraes Toledo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
