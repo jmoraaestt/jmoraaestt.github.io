@@ -1211,3 +1211,20 @@ input, textarea, select { font: inherit; }
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+/* ═══════════════════════ FORM BUTTON STATES ══════════════ */
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#submitBtn { transition: background var(--t), box-shadow var(--t), opacity var(--t); }
+
+#submitBtn[data-state="success"] {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 4px 24px rgba(16, 185, 129, 0.35);
+}
+
+#submitBtn[data-state="error"] {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 4px 24px rgba(239, 68, 68, 0.3);
+}
+
+#submitBtn:disabled { opacity: 0.85; cursor: not-allowed; transform: none; }

@@ -64,24 +64,58 @@ document.querySelectorAll('[data-animate]').forEach(el => {
   animateObserver.observe(el);
 });
 
-// ─── Contact form — envia via AJAX, sem confirmação ──────
-const form = document.getElementById('contactForm');
+// ─── Contact form ─────────────────────────────────────────
+const SVG_ARROW = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const SVG_SPIN  = `<svg style="animation:spin .75s linear infinite;flex-shrink:0" width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2.5" stroke-opacity=".2"/><path d="M12 2a10 10 0 0110 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>`;
+const SVG_CHECK = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
-if (form) {
+const form = document.getElementById('contactForm');
+const btn  = document.getElementById('submitBtn');
+
+if (form && btn) {
+  const DEFAULT_LABEL = `Enviar mensagem ${SVG_ARROW}`;
+
+  btn.innerHTML = DEFAULT_LABEL;
+
+  function setState(state) {
+    btn.removeAttribute('data-state');
+    if (state === 'loading') {
+      btn.disabled = true;
+      btn.innerHTML = `Enviando… ${SVG_SPIN}`;
+    } else if (state === 'success') {
+      btn.disabled = true;
+      btn.setAttribute('data-state', 'success');
+      btn.innerHTML = `Mensagem enviada! ${SVG_CHECK}`;
+    } else if (state === 'error') {
+      btn.disabled = false;
+      btn.setAttribute('data-state', 'error');
+      btn.innerHTML = `Erro ao enviar — tente novamente ${SVG_ARROW}`;
+    } else {
+      btn.disabled = false;
+      btn.innerHTML = DEFAULT_LABEL;
+    }
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true;
+    setState('loading');
 
     try {
-      await fetch(form.action, {
+      const res = await fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
         headers: { 'Accept': 'application/json' },
       });
-    } finally {
+
+      if (!res.ok) throw new Error();
+
       form.reset();
-      btn.disabled = false;
+      setState('success');
+      setTimeout(() => setState('default'), 3000);
+
+    } catch {
+      setState('error');
+      setTimeout(() => setState('default'), 4000);
     }
   });
 }

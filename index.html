@@ -521,43 +521,43 @@
             <input type="hidden" name="_subject" value="Novo contato via portfólio — Júlia Toledo" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
-            <input type="text" name="_honey" style="display:none" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
             <div class="form-row">
               <div class="form-group">
                 <label for="name" class="form-label">Nome</label>
-                <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome completo" required />
+                <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome completo" autocomplete="name" required />
               </div>
               <div class="form-group">
                 <label for="company" class="form-label">Empresa <span class="form-label--opt">(opcional)</span></label>
-                <input type="text" id="company" name="company" class="form-input" placeholder="Nome da empresa" />
+                <input type="text" id="company" name="company" class="form-input" placeholder="Nome da empresa" autocomplete="organization" />
               </div>
             </div>
             <div class="form-group">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required />
+              <label for="email" class="form-label">Email para retorno</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" autocomplete="email" required />
             </div>
             <div class="form-group">
               <label for="service" class="form-label">Tipo de projeto</label>
               <select id="service" name="service" class="form-input form-select" required>
-                <option value="" disabled selected>Selecione o serviço</option>
-                <option value="fullstack">Engenharia Fullstack</option>
-                <option value="mobile">Solução Mobile</option>
+                <option value="" disabled selected>Selecione o tipo de projeto</option>
+                <option value="fullstack">Sistema Web / Fullstack</option>
+                <option value="mobile">Aplicativo Mobile</option>
                 <option value="data">Arquitetura de Dados</option>
-                <option value="consultoria">Consultoria em Requisitos</option>
+                <option value="consultoria">Consultoria Técnica</option>
                 <option value="outro">Outro</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="message" class="form-label">Descreva seu projeto ou desafio</label>
-              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Conte sobre o sistema que precisa ser desenvolvido, problema que quer resolver, prazo estimado..." rows="5" required></textarea>
+              <label for="message" class="form-label">Descreva o projeto ou desafio</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="O que precisa ser desenvolvido? Qual o problema a resolver? Há prazo ou contexto técnico relevante?" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn--primary btn--full">
+            <button type="submit" id="submitBtn" class="btn btn--primary btn--full">
               Enviar mensagem
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <p class="form-disclaimer">
-              Sem spam. Suas informações são usadas somente para responder ao seu contato.
+              Suas informações são usadas somente para responder ao seu contato.
             </p>
           </form>
         </div>
