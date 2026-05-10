@@ -1005,10 +1005,81 @@ input, textarea, select { font: inherit; }
 /* ═══════════════════════ CONTACT ═════════════════════════ */
 .contact { background: var(--bg-0); }
 
-.contact__wrapper {
+/* Card CTA mailto */
+.contact__mailto-card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+  padding: 56px 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  margin-bottom: 20px;
+  transition: border-color var(--t);
+}
+.contact__mailto-card:hover { border-color: var(--border-h); }
+
+@media (min-width: 760px) {
+  .contact__mailto-card {
+    flex-direction: row;
+    text-align: left;
+    gap: 40px;
+  }
+}
+
+.contact__mailto-icon {
+  width: 64px; height: 64px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.18);
+  border-radius: var(--r-lg);
+  color: var(--violet);
+}
+
+.contact__mailto-body { flex: 1; }
+
+.contact__mailto-title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+}
+
+.contact__mailto-text {
+  font-size: 15px;
+  color: var(--txt-2);
+  line-height: 1.75;
+  max-width: 440px;
+}
+
+.contact__mailto-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.contact__mailto-addr {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  color: var(--txt-3);
+}
+
+/* Links grid */
+.contact__links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+@media (min-width: 640px) {
+  .contact__links { grid-template-columns: repeat(3, 1fr); }
 }
 
 .contact-link-card {
@@ -1020,55 +1091,52 @@ input, textarea, select { font: inherit; }
 .contact-link-card:hover {
   border-color: var(--border-h);
   background: var(--bg-card-h);
-  transform: translateX(4px);
+  transform: translateY(-2px);
 }
 .contact-link {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 18px 20px;
+  gap: 14px;
+  padding: 16px 18px;
 }
 .contact-link__icon {
-  width: 44px; height: 44px;
+  width: 40px; height: 40px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(139, 92, 246, 0.08);
-  border: 1px solid rgba(139, 92, 246, 0.18);
+  border: 1px solid rgba(139, 92, 246, 0.15);
   border-radius: var(--r-md);
   color: var(--violet);
 }
-.contact-link__text { flex: 1; }
+.contact-link__text { flex: 1; min-width: 0; }
 .contact-link__label {
   display: block;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--txt-3);
   margin-bottom: 2px;
 }
 .contact-link__value {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--txt-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .contact-link__arrow { color: var(--txt-3); flex-shrink: 0; }
 
-.contact__info {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
+/* Disponibilidade */
 .contact__availability {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-top: 8px;
-  padding: 16px;
+  padding: 16px 20px;
   background: rgba(16, 185, 129, 0.04);
   border: 1px solid rgba(16, 185, 129, 0.12);
   border-radius: var(--r-lg);
@@ -1086,65 +1154,6 @@ input, textarea, select { font: inherit; }
   font-size: 13px;
   color: var(--txt-2);
   line-height: 1.65;
-}
-
-/* Form */
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--r-xl);
-  padding: 36px 28px;
-}
-
-.form-row { display: grid; grid-template-columns: 1fr; gap: 20px; }
-@media (min-width: 540px) {
-  .form-row { grid-template-columns: repeat(2, 1fr); }
-}
-
-.form-group { display: flex; flex-direction: column; gap: 8px; }
-
-.form-label {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--txt-2);
-}
-.form-label--opt { font-size: 12px; color: var(--txt-3); font-weight: 400; }
-
-.form-input {
-  background: var(--bg-1);
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  padding: 12px 14px;
-  font-size: 14px;
-  color: var(--txt-1);
-  transition: border-color var(--t), box-shadow var(--t);
-  outline: none;
-  width: 100%;
-}
-.form-input::placeholder { color: var(--txt-3); }
-.form-input:focus {
-  border-color: var(--violet);
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12);
-}
-
-.form-select {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  cursor: pointer;
-}
-.form-select option { background: var(--bg-1); color: var(--txt-1); }
-.form-textarea { resize: vertical; min-height: 120px; }
-.form-disclaimer { font-size: 12px; color: var(--txt-3); text-align: center; margin-top: -4px; }
-
-@media (min-width: 900px) {
-  .contact__wrapper { flex-direction: row; align-items: flex-start; }
-  .contact__info { flex: 0 0 320px; }
-  .contact__form { flex: 1; }
 }
 
 /* ═══════════════════════ FOOTER ══════════════════════════ */
@@ -1212,19 +1221,3 @@ input, textarea, select { font: inherit; }
   border-radius: 4px;
 }
 
-/* ═══════════════════════ FORM BUTTON STATES ══════════════ */
-@keyframes spin { to { transform: rotate(360deg); } }
-
-#submitBtn { transition: background var(--t), box-shadow var(--t), opacity var(--t); }
-
-#submitBtn[data-state="success"] {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  box-shadow: 0 4px 24px rgba(16, 185, 129, 0.35);
-}
-
-#submitBtn[data-state="error"] {
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-  box-shadow: 0 4px 24px rgba(239, 68, 68, 0.3);
-}
-
-#submitBtn:disabled { opacity: 0.85; cursor: not-allowed; transform: none; }
